@@ -4,7 +4,25 @@
   "workspaces": [
     "packages/*"
   ],
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "yes": true
+    },
+    "version": {
+      "npmClient": "npm",
+      "message": "chore(release): publish"
+    }
+  },
   "devDependencies": {
-    "lerna": "^5.4.3"
+    "@types/node": "^18.7.8",
+    "del-cli": "^5.0.0",
+    "lerna": "^5.4.3",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "build": "lerna run build --stream",
+    "lint": "lerna run lint --stream --parallel",
+    "test": "yarn jest --coverage"
   }
 }

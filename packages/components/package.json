@@ -1,0 +1,41 @@
+{
+  "name": "@andersco/components",
+  "version": "0.0.0",
+  "description": "Components to be used across multiple applications",
+  "keywords": [
+    "react",
+    "component"
+  ],
+  "author": "Johan 'Anders' Ramsay <819213+andersr@users.noreply.github.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "directory": "packages/components",
+    "url": "https://github.com/andersr/andersco-lib.git"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prebuild": "del-cli dist",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
