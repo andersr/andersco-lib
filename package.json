@@ -21,7 +21,8 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "build": "lerna run build --stream",
+    "prepublish": "lerna run build",
+    "publish": "lerna publish",
     "lint": "lerna run lint --stream --parallel",
     "test": "yarn jest --coverage"
   }
