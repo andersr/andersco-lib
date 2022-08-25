@@ -7,7 +7,7 @@ interface Props {
 export function Button({ children }: Props) {
   return (
     <button className="text-3xl font-bold rounded p-4 bg-slate-300">
-      {children}
+      {children} BLA
     </button>
   );
 }

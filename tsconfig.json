@@ -11,9 +11,11 @@
       "forceConsistentCasingInFileNames": true,
       "target": "es6",
       "sourceMap": true,
-      "lib": [
-        "es6"
-      ]
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "jsx": "react-jsx",
+      "lib": ["es6"]
     },
     "exclude": [
       "node_modules",
