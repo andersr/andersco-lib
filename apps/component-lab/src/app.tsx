@@ -1,16 +1,13 @@
-import { Button, Loading } from "@andersco/components";
+import { Button, Loading, FullHeightLayout } from "@andersco/components";
 
 export function App() {
   return (
-    <div>
+    <FullHeightLayout footerContent={<div>Footer</div>}>
+      {/* <Mask showMask /> */}
       APP
       <div>
         <Button>sdsdf</Button>
       </div>
-      <h2>Loading</h2>
-      <div>
-        <Loading />
-      </div>
-    </div>
+    </FullHeightLayout>
   );
 }
