@@ -26,7 +26,8 @@
   },
   "scripts": {
     "prebuild": "del-cli dist",
-    "build": "webpack --config ../../webpack/webpack.dist.ts"
+    "build": "webpack --config ../../webpack/webpack.dist.ts",
+    "build:watch": "webpack --config ../../webpack/webpack.dist.ts --watch"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

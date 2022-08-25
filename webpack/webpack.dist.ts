@@ -1,6 +1,9 @@
 import path from "path";
+import { merge } from "webpack-merge";
+import { common } from "./webpack.common";
+import { ProdConfig } from "./webpack";
 
-const config = {
+const config = merge(common as ProdConfig, {
   mode: "production",
   entry: "./src/index.ts",
   output: {
@@ -9,22 +12,7 @@ const config = {
     libraryTarget: "commonjs2",
   },
   module: {
-    rules: [
-      {
-        test: /\.js?$/,
-        exclude: /(node_modules)/,
-        use: "babel-loader",
-      },
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.tsx?/,
-        use: "ts-loader",
-        exclude: /node_modules/,
-      },
-    ],
+    rules: [],
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"],
@@ -48,6 +36,6 @@ const config = {
       root: "ReactDOM",
     },
   },
-};
+});
 
 export default config;
