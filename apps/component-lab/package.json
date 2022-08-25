@@ -3,16 +3,6 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "dev": "webpack serve --config '../../webpack/webpack.dev.ts'",
-        "lint:css": "stylelint \"./src/**/*.css\"",
-        "lint:styled": "stylelint \"./src/**/*.tsx\" --config ./.stylelintrc_styled",
-        "lint:ts": "eslint \"./src/**/*.{js,ts,tsx}\"",
-        "lint:ts:push": "yarn lint:ts --config ./.eslintrc.push.json",
-        "storybook": "start-storybook -p 6006",
-        "test:unit": "jest",
-        "test:unit:update": "jest --updateSnapshot",
-        "test:unit:watch": "jest --watch",
-        "build-storybook": "build-storybook"
     },
     "dependencies": {
         "react": "^18.2.0",
