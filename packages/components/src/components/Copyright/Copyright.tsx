@@ -1,5 +1,5 @@
 interface Props {
-  orgName: string;
+  orgName?: string;
 }
 
 export function CopyRight({ orgName }: Props) {
