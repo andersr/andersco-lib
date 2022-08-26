@@ -6,10 +6,16 @@ import { ProdConfig } from "./webpack";
 const config = merge(common as ProdConfig, {
   mode: "production",
   entry: "./src/index.ts",
+  target: "web",
   output: {
     path: path.resolve(__dirname, "../packages/components/dist"),
     filename: "index.js",
-    libraryTarget: "commonjs2",
+    libraryTarget: "umd",
+    globalObject: "this",
+  },
+  watchOptions: {
+    aggregateTimeout: 600,
+    ignored: ["**/dist/**/*", "**/node_modules"],
   },
   module: {
     rules: [],
