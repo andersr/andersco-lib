@@ -1,4 +1,4 @@
-import { Button, Loading, FullHeightLayout } from "@andersco/components";
+import { Button, FullHeightLayout, CopyRight } from "@andersco/components";
 
 export function App() {
   return (
@@ -7,6 +7,10 @@ export function App() {
       APP
       <div>
         <Button>sdsdf</Button>
+      </div>
+      <div>
+        Copyright: <br />
+        <CopyRight orgName="Big Corp, Inc." />
       </div>
     </FullHeightLayout>
   );
