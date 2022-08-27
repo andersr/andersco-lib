@@ -2,8 +2,10 @@ node_modules/
 dist
 .cache
 .idea
+
 # testing
 /coverage
+/cypress/videos
 
 # misc
 .DS_Store

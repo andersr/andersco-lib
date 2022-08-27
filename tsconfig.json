@@ -1,24 +1,23 @@
 {
-    "compilerOptions": {
-      "module": "commonjs",
-      "declaration": true,
-      "strict": true,
-      "noImplicitAny": false,
-      "removeComments": true,
-      "noLib": false,
-      "emitDecoratorMetadata": true,
-      "experimentalDecorators": true,
-      "forceConsistentCasingInFileNames": true,
-      "target": "es6",
-      "sourceMap": true,
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "jsx": "react-jsx",
-      "lib": ["es6"]
-    },
-    "exclude": [
-      "node_modules",
-      "**/*.spec.ts"
-    ]
-   }
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "es6",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "lib": ["es6", "dom"],
+    "baseUrl": ".",
+    "types": ["cypress", "@testing-library/cypress"]
+  },
+  "exclude": ["node_modules", "**/*.spec.ts", "tmp"]
+}
