@@ -36,7 +36,7 @@
 //   }
 // }
 
-import { mount } from "cypress/react18";
+// import { mount } from "cypress/react18";
 import "@testing-library/cypress/add-commands";
 
-Cypress.Commands.add("mount", mount);
+// Cypress.Commands.add("mount", mount);
