@@ -33,6 +33,7 @@
     "cypress": "^10.6.0",
     "del-cli": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.1",
     "lerna": "^5.4.3",
     "postcss": "^8.4.16",
     "postcss-import": "^14.1.0",
@@ -55,10 +56,11 @@
     "build": "yarn workspace @andersco/components build",
     "build:watch": "yarn workspace @andersco/components build:watch",
     "lint": "lerna run lint --stream --parallel",
-    "test": "yarn jest --coverage",
+    "test": "yarn run cy:comp:run",
     "dev": "webpack serve --config './webpack/webpack.dev.ts'",
     "cy:open": "cypress open",
     "cy:comp:dev": "cypress open --component",
-    "cy:comp:run": "cypress run --component"
+    "cy:comp:run": "cypress run --component --browser chrome",
+    "prepare": "husky install"
   }
 }
