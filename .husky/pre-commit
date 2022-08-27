@@ -3,4 +3,4 @@
 
 echo "*** Running Component tests***"
 unset ELECTRON_RUN_AS_NODE
-yarn cy:comp:run
+yarn cy:comp:run  -- --config video=false screenshotOnRunFailure=false
