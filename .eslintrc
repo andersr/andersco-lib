@@ -13,10 +13,15 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
     }
   },
   "extends": [
     "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
@@ -25,7 +30,7 @@
     "plugin:jsx-a11y/recommended",
     "prettier"
   ],
-  "plugins": ["react", "jsx-a11y", "cypress", "@typescript-eslint"],
+  "plugins": ["import", "react", "jsx-a11y", "cypress", "@typescript-eslint"],
   "rules": {
     "complexity": ["error", 15],
     "max-lines": ["error", 300],
