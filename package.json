@@ -60,6 +60,5 @@
     "cy:open": "cypress open",
     "cy:comp:dev": "cypress open --component",
     "cy:comp:run": "cypress run --component"
-  },
-  "dependencies": {}
+  }
 }
