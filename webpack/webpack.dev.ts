@@ -9,24 +9,24 @@ const PORT = 3000;
 const config = merge(common as ProdConfig, {
   mode: "development",
   entry: "./apps/component-lab/src/index.tsx",
-  // output: {
-  //   publicPath: "/",
-  // },
-  // devServer: {
-  //   port: PORT,
-  //   onListening: () => {
-  //     openBrowser(`http://localhost:${PORT}`);
-  //   },
-  // },
-  // module: {
-  //   rules: [],
-  // },
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     template: "./webpack/templates/index.html",
-  //     title: "Component Lab",
-  //   }),
-  // ],
+  output: {
+    publicPath: "/",
+  },
+  devServer: {
+    port: PORT,
+    onListening: () => {
+      openBrowser(`http://localhost:${PORT}`);
+    },
+  },
+  module: {
+    rules: [],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./webpack/templates/index.html",
+      title: "Component Lab",
+    }),
+  ],
 });
 
 export default config;
