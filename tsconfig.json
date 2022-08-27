@@ -15,7 +15,9 @@
       "esModuleInterop": true,
       "skipLibCheck": true,
       "jsx": "react-jsx",
-      "lib": ["es6"]
+      "lib": ["es6", "dom"],
+      "baseUrl": ".",
+      "types": ["cypress", "@testing-library/cypress"]
     },
     "exclude": [
       "node_modules",
