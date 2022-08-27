@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "*** Running All Checks***"
+unset ELECTRON_RUN_AS_NODE
+yarn run checks
