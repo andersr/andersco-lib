@@ -7,21 +7,25 @@
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2017,
+    "ecmaVersion": "latest",
     "project": "./tsconfig.json"
   },
   "settings": {
     "react": {
-      "version": "18"
+      "version": "detect"
     }
   },
   "extends": [
     "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:react/jsx-runtime",
+    "plugin:jsx-a11y/recommended",
     "prettier"
   ],
-  "plugins": ["react", "cypress", "@typescript-eslint"],
+  "plugins": ["react", "jsx-a11y", "cypress", "@typescript-eslint"],
   "rules": {
     "complexity": ["error", 15],
     "max-lines": ["error", 300],
