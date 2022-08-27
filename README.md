@@ -8,7 +8,8 @@ This is a library of code I use in multiple apps.  It includes React components 
 - Run `yarn dev` to run the sandbox dev server.
 
 ## Testing
-- Component testing dev: `cy:comp`
+- Component testing dev: `cy:comp:dev`
+- Run component tests: `cy:comp:run`
 
 ## Build for dist 
 - `yarn build`
