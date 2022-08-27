@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { App } from "./app";
-import "./tailwind.css";
+import "./setup";
 
 const el: Element | null = document.getElementById("root");
 

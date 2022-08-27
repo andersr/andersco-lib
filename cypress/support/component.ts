@@ -15,7 +15,8 @@
 
 // Import commands.js using ES2015 syntax:
 import "./commands";
-import "../plugins/tailwind";
+import "../../apps/component-lab/src/setup";
+// import "../plugins/tailwind";
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
