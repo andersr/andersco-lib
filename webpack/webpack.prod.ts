@@ -2,7 +2,7 @@ import { merge } from "webpack-merge";
 import { common } from "./webpack.common";
 import { ProdConfig } from "./webpack";
 
-const PORT = 3000;
+const PORT = 8080;
 
 const config = merge(common as ProdConfig, {
   mode: "production",
