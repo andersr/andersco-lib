@@ -9,7 +9,7 @@ export function App() {
       </div>
       <div>
         Copyright: <br />
-        <CopyRight orgName="Big Corp, Inc." />
+        <CopyRight>Big Corp, Inc.</CopyRight>
       </div>
       <div>
         Row of items:
