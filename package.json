@@ -74,7 +74,7 @@
     "dev": "webpack serve --config './webpack/webpack.dev.ts'",
     "cy:open": "cypress open",
     "cy:comp:dev": "cypress open --component",
-    "cy:comp:run": "cypress run --component --browser chrome",
+    "cy:comp:run": "cypress run --component --browser chrome --config baseUrl=http://localhost:8080/",
     "prepare": "husky install"
   }
 }

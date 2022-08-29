@@ -1,11 +1,11 @@
 import { defineConfig } from "cypress";
-import webpackDevConfig from "./webpack/webpack.e2e";
+import webpackConfig from "./webpack/webpack.prod";
 export default defineConfig({
   component: {
     devServer: {
       framework: "react",
       bundler: "webpack",
-      webpackConfig: webpackDevConfig,
+      webpackConfig,
     },
     specPattern: "packages/components/src/**/*.cy.tsx",
   },

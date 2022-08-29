@@ -1,11 +1,11 @@
 interface Props {
-  orgName?: string;
+  children: React.ReactNode;
 }
 
-export function CopyRight({ orgName }: Props) {
+export function CopyRight({ children }: Props) {
   return (
-    <>
-      &copy; {new Date().getFullYear()} {orgName}
-    </>
+    <span>
+      &copy; {new Date().getFullYear()} {children}
+    </span>
   );
 }
